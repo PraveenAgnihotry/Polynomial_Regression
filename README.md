@@ -5,22 +5,14 @@
 This project implements **Polynomial Regression** optimized using **Gradient Descent**, built entirely from scratch without using libraries like Scikit-Learn. It demonstrates how to manually compute the cost function, gradients, and parameter updates while processing data from a dataset in Excel format.
 
 ## Features
-- Implements a **quadratic polynomial regression model**:
-  \[
-  h_{\theta}(x) = \theta_2 x^2 + \theta_1 x + \theta_0
-  \]
-- Uses a **custom cost function**:
-  \[
-  J(\theta) = \frac{1}{4n} \sum_{i=1}^{n} \left( y^{(i)} - h_{\theta}(x^{(i)}) \right)^4
-  \]
-- **Gradient Descent Optimization**:
-  - Updates model parameters (\( \theta_2, \theta_1, \theta_0 \)) iteratively using partial derivatives of the cost function.
-
+- Implements a **quadratic polynomial regression model**
+- Uses a **custom cost function**
+- **Gradient Descent Optimization**
 ## Workflow
 1. **Data Input**:
    - Reads data from an Excel file with two columns:
-     - **Column 1**: Input feature (Temperature in Celsius, \(X\))
-     - **Column 2**: Output target (Net hourly electrical energy output, \(Y\)).
+     - **Column 1**: Input feature (Temperature in Celsius, (X))
+     - **Column 2**: Output target (Net hourly electrical energy output, (Y)).
    - Each row represents one data point.
 
 2. **Data Preprocessing**:
@@ -30,7 +22,7 @@ This project implements **Polynomial Regression** optimized using **Gradient Des
    - Implements the gradient descent algorithm to minimize the cost function and find optimal model parameters.
 
 4. **Model Evaluation**:
-   - Outputs the final model parameters (\( \theta_2, \theta_1, \theta_0 \)).
+   - Outputs the final model parameters.
    - Tracks the cost during training for monitoring convergence.
 
 ## How to Use
@@ -40,7 +32,7 @@ This project implements **Polynomial Regression** optimized using **Gradient Des
    cd <repository-directory>
    ```
 
-2. Prepare an Excel file with your dataset (two columns: \(X\) and \(Y\)).
+2. Prepare an Excel file with your dataset.
 
 3. Install dependencies for reading Excel files:
    ```bash
@@ -73,13 +65,13 @@ This project implements **Polynomial Regression** optimized using **Gradient Des
 | 25.7                   | 465.2                  |
 
 ## Output
-- **Model Parameters**: Final values of \( \theta_2, \theta_1, \theta_0 \).
+- **Model Parameters**: Final values of theta_2, theta_1, theta_0.
 - **Training Cost**: Final cost of the model after convergence.
 - **Prediction**: Example predictions for given input data.
 
 ## Limitations
 - Only supports quadratic models (degree-2 polynomial regression).
-- Gradient descent can be sensitive to the choice of the learning rate (\( \alpha \)).
+- Gradient descent can be sensitive to the choice of the learning rate (alpha).
 
 ## Acknowledgments
 This project is built from scratch based on machine learning principles, inspired by concepts from:
