@@ -1,5 +1,7 @@
 # Polynomial Regression with Gradient Descent
 
+## This project was developed as a part of Intelligent Systems: Machine Learning subject, for the Masters in Information and Computer Science (AI specialization) at the University of Luxembourg.
+
 This project implements **Polynomial Regression** optimized using **Gradient Descent**, built entirely from scratch without using libraries like Scikit-Learn. It demonstrates how to manually compute the cost function, gradients, and parameter updates while processing data from a dataset in Excel format.
 
 ## Features
